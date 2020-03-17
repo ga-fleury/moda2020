@@ -48,7 +48,7 @@ header {
 
   &__call {
     position: absolute;
-    color: #fff;
+    color: #d1e3ff;
     font-family: $font-display;
     left: 50%;
     max-width: 50em;
@@ -71,6 +71,7 @@ header {
   &__title {
     font-size: 4rem;
     font-weight: 800;
+    overflow: hidden;
     // font-style: italic;
   }
 
