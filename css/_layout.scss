@@ -1,0 +1,86 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+  nav {
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .icon {
+    fill: $color-primary;
+    height: 24px;
+    width: 24px;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition-duration: .1s;
+
+    &:hover {
+      fill: $color-secondary;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      transition-duration: .1s;
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0);
+}
+
+.hero {
+  position: relative;
+  top: 50%;
+  height: 11rem;
+  width: 100vw;
+  background-image: linear-gradient(250deg, #0c6c8c, #476db7, #ae56b6, #f72b79, #ff5200);
+  transform: skewY(-16deg);
+
+  &__call {
+    position: absolute;
+    color: #fff;
+    font-family: $font-display;
+    left: 50%;
+    max-width: 50em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    line-height: 3.7rem;
+    white-space: nowrap;
+    margin-right: 5%;
+    @include big {
+      left: 40%;
+    }
+    @include medium {
+      left: 20%;
+    }
+    @include small {
+      left: 5%;
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 800;
+    // font-style: italic;
+  }
+
+  &__desc {
+    padding-right: 10em;
+  }
+
+  &__feat {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+  }
+}
